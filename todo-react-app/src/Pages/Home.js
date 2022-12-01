@@ -9,7 +9,7 @@ const Home = () => {
   const [searchParam, setSearchParam] = useState('');
 
   const getBlogs = async () => {
-    let response = await axios.get('http://127.0.0.1:8000/api/blogs?search=1&param=' + searchParam);
+    let response = await axios.get('http://127.0.0.1:8000/api/blogs');
     setBlogs(response.data);
     setTimeout(() => {
       setLoading(false);
