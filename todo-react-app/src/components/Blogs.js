@@ -6,7 +6,7 @@ const Blogs = ({ blogs, loading, deleteBlog, searchParam }) => {
                 <div colSpan='6' className="text-center"><p></p>
                     <div className="loader5"></div>
                 </div>
-            ) : blogs && blogs.filter((blog) => {
+            ) : blogs && blogs.length ? blogs.filter((blog) => {
                 if (searchParam == '') {
                     return blog;
                 } else if (blog.title.toLowerCase().includes(searchParam.toLowerCase())) {
@@ -27,7 +27,7 @@ const Blogs = ({ blogs, loading, deleteBlog, searchParam }) => {
                         </blockquote>
                     </div>
                 </div>
-            ))}
+            )) : 'No data found'}
         </>
     )
 }
