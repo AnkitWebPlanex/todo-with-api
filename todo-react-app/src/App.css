@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Loader CSS Start */
+
+/* body {
+    background: #000 !important;
+    color: #fff;
+} */
+p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px;
+    opacity: 0.5;
+    border: 3px solid #09acfd;
+    -webkit-animation: loader 1s ease-in-out infinite alternate;
+    animation: loader 1s ease-in-out infinite alternate;
+}
+
+.loader:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid #09acfd;
+}
+
+.loader:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid #09acfd;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0deg) scale(1, 1);
+        border-radius: 0px;
+    }
+    to {
+        transform: rotate(360deg) scale(0, 0);
+        border-radius: 50px;
+    }
+}
+@-webkit-keyframes loader {
+    from {
+        -webkit-transform: rotate(0deg) scale(1, 1);
+        border-radius: 0px;
+    }
+    to {
+        -webkit-transform: rotate(360deg) scale(0, 0);
+        border-radius: 50px;
+    }
+}
+
+.loader5 {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #4183d7;
+    border-top: 10px solid #f5ab35;
+    -webkit-animation: loader5 1.2s ease-in-out infinite alternate;
+    animation: loader5 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes loader5 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+@-webkit-keyframes loader5 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(720deg);
+    }
+}
+
+/* Loader CSS End */
