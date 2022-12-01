@@ -100,3 +100,11 @@ p {
 }
 
 /* Loader CSS End */
+
+/* Validation Show CSS Start */
+
+.invalid-feedback {
+    display: block !important;
+}
+
+/* Validation Show CSS End */
