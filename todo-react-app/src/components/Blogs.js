@@ -1,5 +1,5 @@
 import React from 'react'
-const Blogs = ({ blogs, loading, deleteBlog, searchParam }) => {
+const Blogs = ({ blogs, loading, deleteBlog, searchParam, editBlog }) => {
     return (
         <>
             {loading ? (
@@ -16,8 +16,11 @@ const Blogs = ({ blogs, loading, deleteBlog, searchParam }) => {
                 <div className="card mb-2" key={blog.id}>
                     <div className="card-header">
                         {blog.title}
-                        <button className="btn btn-danger text-white btn-sm float-end" onClick={() => deleteBlog(blog.id)}>
+                        <button className="btn btn-danger text-white btn-sm float-end mx-1" onClick={() => deleteBlog(blog.id)}>
                             <i className="fa fa-trash"></i>
+                        </button>
+                        <button className="btn btn-success text-white btn-sm float-end" onClick={() => editBlog(blog.id)}>
+                            <i className="fa fa-edit"></i>
                         </button>
                     </div>
                     <div className="card-body">

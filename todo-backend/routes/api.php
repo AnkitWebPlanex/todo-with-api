@@ -17,4 +17,4 @@ use App\Http\Controllers\BlogController;
 
 // Route::post('blogs', [BlogController::class, 'store']);
 
-Route::apiResource('blogs', BlogController::class);
+Route::resource('blogs', BlogController::class);
